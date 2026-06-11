@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    front-family:Arial,sans-serif;
+}
+header{
+    background-color: aqua;
+    box-shadow: 0 0 10px #5843;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+
+}
+h2{
+    color:#4691ff;
+    border-bottom: 1px solid #ddd;
+    padding:10px 0;
+
+}
+#footer{
+    background-color: #333;
+    color: white;
+    text-align: center ;
+    padding: 10px;
+}

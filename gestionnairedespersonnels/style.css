@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+}
+
+#header {
+  background: #fff;
+  box-shadow: 0 2px 8px #0002;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+}
+
+#logo {
+  height: 50px;
+}
+
+nav a {
+  color: #185FA5;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+#main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  color: #1a3a5c;
+  border-bottom: 2px solid #378ADD;
+  padding-bottom: 6px;
+  margin: 0 0 14px;
+}
+
+.ligne {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.champ {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.champ input,
+.champ select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.champ label {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+button[type="button"] {
+  background: #378ADD;
+  color: white;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button[type="reset"] {
+  background: #eee;
+  color: #333;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #1a3a5c;
+  color: white;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) td {
+  background: #f7f9ff;
+}
+
+#footer {
+  background: #1a3a5c;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+}
