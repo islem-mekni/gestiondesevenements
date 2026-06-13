@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des etudiants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <nav>
+      <a href="etudiant.html">Accueil</a>
+      <a href="notes.html">Notes</a>
+    </nav>
+  </div>
+
+  <div id="main">
+
+    <div class="card">
+      <h2>Ajouter un etudiant</h2>
+      <form id="form-etudiant">
+        <div class="ligne">
+          <div class="champ">
+            <label>Nom :</label>
+            <input type="text" id="nom" placeholder="Votre nom">
+          </div>
+          <div class="champ">
+            <label>Prenom :</label>
+            <input type="text" id="prenom" placeholder="Votre prenom">
+          </div>
+          <div class="champ">
+            <label>Email :</label>
+            <input type="email" id="email" placeholder="l'email">
+          </div>
+          <div class="champ">
+            <label>Filiere :</label>
+            <select id="filiere">
+              <option>-- Choisir --</option>
+              <option>Electronique</option>
+              <option>SQR</option>
+              <option>IA</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" onclick="ajouterEtudiant()">Ajouter</button>
+        <button type="reset">Effacer</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Liste des etudiants</h2>
+      <table id="tableau">
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Email</th>
+          <th>Filière</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">Mon application</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fastify_1 = __importDefault(require("fastify"));
 const cors_1 = __importDefault(require("@fastify/cors"));
 const better_sqlite3_1 = __importDefault(require("better-sqlite3"));
-const db = (0, better_sqlite3_1.default)("../database/membres.db");
+const db = (0, better_sqlite3_1.default)("./membres.db");
 db.exec(`
   CREATE TABLE IF NOT EXISTS membre (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

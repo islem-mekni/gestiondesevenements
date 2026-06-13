@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes de l'étudiant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <nav>
+      <a href="etudiant.html">Accueil</a>
+    </nav>
+  </div>
+
+  <div id="main">
+
+    <!-- CARD 1 : Infos étudiant -->
+    <div class="card">
+      <h2>Informations</h2>
+      <p>Nom : <strong id="etudiant-nom"></strong></p>
+      <p>Filière : <strong id="etudiant-filiere"></strong></p>
+      <p>Moyenne : <strong id="etudiant-moyenne"></strong> / 20</p>
+    </div>
+
+    <!-- CARD 2 : Formulaire ajout note -->
+    <div class="card">
+      <h2>Ajouter une note</h2>
+      <form id="form-note">
+        <div class="ligne">
+          <div class="champ">
+            <label>Matière :</label>
+            <select id="matiere">
+              <option>-- Choisir --</option>
+              <option>Réseaux</option>
+              <option>Math</option>
+              <option>Info</option>
+              <option>Electronique</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label>Note /20 :</label>
+            <input type="number" id="note" placeholder="La note" min="0" max="20">
+          </div>
+        </div>
+        <button type="button" onclick="ajouterNote()">Ajouter</button>
+        <button type="reset">Effacer</button>
+      </form>
+    </div>
+
+    <!-- CARD 3 : Tableau des notes -->
+    <div class="card">
+      <h2>Les notes</h2>
+      <table id="tableau">
+        <tr>
+          <th>Matière</th>
+          <th>Note</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">Mon application</div>
+  <script src="notes.js"></script>
+</body>
+</html>
