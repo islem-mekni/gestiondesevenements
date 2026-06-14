@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header">
+    <nav>
+      <a href="index.html">Accueil</a>
+    </nav>
+  </div>
+
+  <div id="main">
+
+    <!-- Section 1 : Créer personnage -->
+    <div id="ecran-1" class="ecran active">
+      <div class="card">
+        <h2>Créer ton personnage</h2>
+        <form id="form-personnage">
+          <div class="ligne">
+            <div class="champ">
+              <label>Nom du joueur :</label>
+              <input type="text" id="nom" placeholder="Ton nom">
+            </div>
+            <div class="champ">
+              <label>Classe :</label>
+              <select id="classe">
+                <option>-- Choisir --</option>
+                <option>Guerrier</option>
+                <option>Mage</option>
+                <option>Archer</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" onclick="commencer()">Commencer</button>
+          <button type="reset">Effacer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Section 2 : Quiz -->
+    <div id="ecran-2" class="ecran">
+      <div class="card">
+        <h2 id="question-titre">Question 1/5</h2>
+        <p id="question-texte"></p>
+        <form id="form-quiz">
+          <div id="choix"></div>
+        </form>
+        <p id="feedback"></p>
+        <button type="button" id="btn-suivant" onclick="suivant()" style="display:none">
+          Question suivante
+        </button>
+      </div>
+    </div>
+
+    <!-- Section 3 : Classement -->
+    <div id="ecran-3" class="ecran">
+      <div class="card">
+        <h2>Résultats</h2>
+        <p>Score : <strong id="score-final"></strong></p>
+      </div>
+      <div class="card">
+        <h2>Classement</h2>
+        <table id="tableau-classement">
+          <tr>
+            <th>Rang</th>
+            <th>Nom</th>
+            <th>Classe</th>
+            <th>Score</th>
+          </tr>
+        </table>
+        <button type="button" onclick="rejouer()">Rejouer</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer">Quiz RPG</div>
+  <script src="script.js"></script>
+</body>
+</html>

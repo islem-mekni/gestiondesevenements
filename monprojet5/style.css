@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1a1a2e;
+}
+
+#header {
+    background-color: #16213e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 2px solid #378ADD;
+}
+
+nav a {
+    color: #378ADD;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ── Écrans ── */
+.ecran {
+    display: none;
+}
+
+.ecran.active {
+    display: block;
+}
+
+/* ── Cards ── */
+.card {
+    background: #16213e;
+    border: 1px solid #378ADD;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    color: #378ADD;
+    border-bottom: 2px solid #378ADD;
+    padding-bottom: 8px;
+    margin: 0 0 16px 0;
+}
+
+/* ── Formulaire ── */
+.ligne {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.champ {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.champ label {
+    font-size: 13px;
+    color: #a0aec0;
+    font-weight: 500;
+}
+
+.champ input,
+.champ select {
+    padding: 8px 10px;
+    border: 1px solid #378ADD;
+    border-radius: 6px;
+    background: #0f3460;
+    color: white;
+    font-size: 14px;
+}
+
+/* ── Boutons ── */
+button[type="button"] {
+    background: #378ADD;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+button[type="button"]:hover {
+    background: #2563a8;
+}
+
+button[type="reset"] {
+    background: transparent;
+    color: #a0aec0;
+    border: 1px solid #a0aec0;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ── Choix de réponse ── */
+.choix-btn {
+    display: block;
+    width: 100%;
+    background: #0f3460;
+    color: white;
+    border: 1px solid #378ADD;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.choix-btn:hover {
+    background: #378ADD;
+}
+
+.choix-btn.correct {
+    background: #276749;
+    border-color: #48bb78;
+    color: white;
+}
+
+.choix-btn.wrong {
+    background: #742a2a;
+    border-color: #fc8181;
+    color: white;
+}
+
+/* ── Feedback ── */
+#feedback {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.feedback-correct {
+    background: #276749;
+    color: #9ae6b4;
+}
+
+.feedback-wrong {
+    background: #742a2a;
+    color: #fc8181;
+}
+
+/* ── Tableau classement ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+th {
+    background: #0f3460;
+    color: #378ADD;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #1e3a5f;
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+tr:nth-child(even) td {
+    background: #0f2a4a;
+}
+
+/* ── Score ── */
+#score-final {
+    color: #378ADD;
+    font-size: 20px;
+}
+
+/* ── Footer ── */
+#footer {
+    background: #16213e;
+    color: #378ADD;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    border-top: 2px solid #378ADD;
+}
