@@ -436,6 +436,13 @@ charger()
 → Vérifier `tsconfig.json` et que `src/index.ts` n'est pas vide
 
 ---
+1. npm init -y
+2. Modifier package.json → ajouter script "dev"
+3. npm i fastify @fastify/cors better-sqlite3
+4. npm i -D typescript @types/better-sqlite3
+5. Créer tsconfig.json simplifié
+6. Créer src/index.ts et écrire le code ← important !
+7. npm run dev → dist/ apparaît !
 
 ## 🧠 Règle d'or
 
