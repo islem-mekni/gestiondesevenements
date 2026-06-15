@@ -69,7 +69,7 @@ Crée le fichier `tsconfig.json` dans `api/` et colle :
 ```
 
 ### 6️⃣ Créer src/index.ts
-tsx --init
+npx tsx --init
 ### et écrire le code
 ```typescript
 import Fastify from "fastify";
